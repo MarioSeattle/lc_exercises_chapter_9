@@ -1,0 +1,14 @@
+def mirror(text):
+    output = text + reverse(text)
+    return (output)
+
+def reverse(text):
+    return text[::-1]
+
+
+# Don't copy these tests into Vocareum
+from test import testEqual
+testEqual(mirror('good'), 'gooddoog')
+testEqual(mirror('Python'), 'PythonnohtyP')
+testEqual(mirror(''), '')
+testEqual(mirror('a'), 'aa')
