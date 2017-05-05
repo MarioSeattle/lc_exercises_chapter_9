@@ -1,0 +1,5 @@
+def reverse(text):
+    backwardstext = []
+    for letter in text:
+        backwardstext.insert(0, letter)
+    return ''.join(backwardstext)
