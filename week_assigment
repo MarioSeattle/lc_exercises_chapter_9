@@ -2,8 +2,17 @@ def mirror(text):
     output = text + reverse(text)
     return (output)
 
-def reverse(text):
-    return text[::-1]
+def reverse(text):  
+    rev=""
+    
+    for i in text:
+        rev = i + rev
+        
+    return rev
+
+    #one line of code will do it!
+    #return text[::-1]
+
 
 
 # Don't copy these tests into Vocareum
